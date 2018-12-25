@@ -3,12 +3,18 @@ import unittest
 
 def sort_scores(unsorted_scores, highest_possible_score):
 
-    # Sort the scores in O(n) time
+    integer_list = [0] * (highest_possible_score+1)
+    sorted_list = []
 
-    return []
+    for i in range(len(unsorted_scores)):
+        integer_list[unsorted_scores[i]] += 1
 
+    for i in range(len(integer_list)-1, -1, -1):
+        for j in range(integer_list[i]):
+            sorted_list.append(i)
 
-# Tests
+    return sorted_list
+
 
 class Test(unittest.TestCase):
 
