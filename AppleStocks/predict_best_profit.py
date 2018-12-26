@@ -18,10 +18,6 @@ def get_max_profit(stock_prices):
     return profit
 
 
-result = get_max_profit([1])
-print(result)
-
-
 class Test(unittest.TestCase):
 
     def test_price_goes_up_then_down(self):
