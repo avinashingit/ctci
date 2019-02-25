@@ -5,7 +5,7 @@
  * @Project: CTCI
  * @Filename: 1.2.cpp
  * @Last modified by:   avinash
- * @Last modified time: 2019-02-25T15:56:20-06:00
+ * @Last modified time: 2019-02-25T16:30:56-06:00
  * @License: MIT License
  */
 
@@ -17,6 +17,7 @@
 
  using namespace std;
 
+//Time complexity is O(n) Space Complexity O(n)
 bool check_anagram(string s1, string s2) {
     if(s1.length() != s2.length()) {
         return false;
@@ -34,6 +35,7 @@ bool check_anagram(string s1, string s2) {
     return true;
 }
 
+//Time complexity O(nlogn) Space Complexity O(1)
 bool check_anagram_method2(string s1, string s2) {
     sort(s1.begin(), s1.end());
     sort(s2.begin(), s2.end());
