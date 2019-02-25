@@ -5,11 +5,9 @@
  * @Project: CTCI
  * @Filename: 1.1.cpp
  * @Last modified by:   avinash
- * @Last modified time: 2019-02-25T15:33:16-06:00
+ * @Last modified time: 2019-02-25T15:40:07-06:00
  * @License: MIT License
  */
-
-
 
 #include <iostream>
 #include <vector>
@@ -19,6 +17,7 @@
 
 using namespace std;
 
+// Time Complexity is O(len(s)). Space Complexity is O(len(s))
 bool has_unique_characters(string s) {
     map<char, int> m;
     for(int i=0;i<s.size();i++) {
@@ -33,6 +32,7 @@ bool has_unique_characters(string s) {
     return true;
 }
 
+// Time Complexity is O(len(s)log(len(s))). Space Complexity is O(1)
 bool has_unique_characters_method2(string s) {
     sort(s.begin(), s.end());
     for(int i=1;i<s.length();i++) {
