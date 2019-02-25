@@ -16,10 +16,7 @@ def find_rotation_point(words):
             end_index = midpoint
 
 
-actual = find_rotation_point(['ptolemaic', 'retrograde', 'supplant',
-                              'undulate', 'xenoepist', 'asymptote',
-                              'babka', 'banoffee', 'engender',
-                              'karpatka', 'othellolagkage'])
+actual = find_rotation_point(['a', 'b', 'c'])
 print(actual)
 
 
